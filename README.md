@@ -1,6 +1,12 @@
 # Golang Advanced Snippets
 Go Advanced Snippet during learning Go ...
 
+## Reference
+* [Golang Tutorial](https://tutorialedge.net/course/golang/)
+* [Analyzing the performance of Go functions with benchmarks](https://medium.com/justforfunc/analyzing-the-performance-of-go-functions-with-benchmarks-60b8162e61c6)
+* [Practical Go Benchmarks](https://stackimpact.com/blog/practical-golang-benchmarks/)
+* [How to write benchmarks in Go](https://dave.cheney.net/2013/06/30/how-to-write-benchmarks-in-go)
+
 ## 番外
 
 盘点《海贼王》中草帽小子身后的强大后宫团队。
