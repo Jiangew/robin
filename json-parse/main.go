@@ -36,9 +36,10 @@ func main() {
 
 	// Unmarshalling our JSON
 	byteValue, _ := ioutil.ReadAll(jsonFile)
+
+	// Working with Structured Data
 	var users Users
 	json.Unmarshal(byteValue, &users)
-
 	for i := 0; i < len(users.Users); i++ {
 		fmt.Println("User Type: " + users.Users[i].Type)
 		fmt.Println("User Age: " + strconv.Itoa(users.Users[i].Age))
@@ -46,4 +47,9 @@ func main() {
 		fmt.Println("Facebook Url: " + users.Users[i].Social.Facebook)
 		fmt.Println("------ Gorgeous dividing line ------")
 	}
+
+	// Working with Unstructured Data
+	var result map[string]interface{}
+	json.Unmarshal([]byte(byteValue), &result)
+	fmt.Println(result["users"])
 }
