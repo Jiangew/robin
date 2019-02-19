@@ -1,8 +1,8 @@
 package main
 
-import(
+import (
 	"fmt"
-    "log"
+	"log"
 	"net/http"
 	"strconv"
 	"sync"
@@ -29,7 +29,7 @@ func main() {
 
 	http.HandleFunc("/", echoString)
 
-	http.HandleFunc("/hi", func(w http.ResponseWriter, r *http.Request){
+	http.HandleFunc("/hi", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hi")
 	})
 
